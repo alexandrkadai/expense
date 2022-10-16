@@ -1,5 +1,5 @@
 import ExpnseContainer from './components/expense-container/expense-container.component';
-function App() {
+const App = () => {
   const expenses = [
     {
       id: 'e1',
@@ -27,6 +27,6 @@ function App() {
       <ExpnseContainer data={expenses} />
     </div>
   );
-}
+};
 
 export default App;

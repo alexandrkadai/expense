@@ -1,9 +1,10 @@
-import ExpenseItem from '../exspense/ExpenseItem.component';
+import Card from '../card/card.component';
+import ExpenseItem from '../exspense-item/expenseI-tem.component';
 import './expense-container.style.scss';
 
-function ExpnseContainer(props) {
+const ExpnseContainer = (props) => {
   return (
-    <div className="expenses">
+    <Card className="expenses">
       <ExpenseItem
         title={props.data[0].title}
         amount={props.data[0].amount}
@@ -24,8 +25,8 @@ function ExpnseContainer(props) {
         amount={props.data[3].amount}
         date={props.data[3].date}
       />
-    </div>
+    </Card>
   );
-}
+};
 
 export default ExpnseContainer;
