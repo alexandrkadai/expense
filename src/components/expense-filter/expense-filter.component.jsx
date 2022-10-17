@@ -1,6 +1,4 @@
-import { useState } from 'react';
-
-import './expenses-filter.style.scss';
+import './expense-filter.style.scss';
 
 const ExpensesFilter = (props) => {
   const selectHandler = (event) => {
