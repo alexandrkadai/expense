@@ -1,4 +1,5 @@
 import ExpnseContainer from './components/expense-container/expense-container.component';
+import ExpenseAdd from './components/expense-add/expense-add.component';
 const App = () => {
   const expenses = [
     {
@@ -21,9 +22,12 @@ const App = () => {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  const addExpenseHandler = (expense) => {};
+
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <ExpenseAdd onAddExpense={addExpenseHandler} />
       <ExpnseContainer data={expenses} />
     </div>
   );
